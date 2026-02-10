@@ -19,6 +19,7 @@ this guide will be mostly a mix of the original one, and some things i added.
 - open cmd and paste this in once u finish installing python (REQUIRED) ``pip install fastapi aiohttp pydub uvicorn python-magic python-magic-bin==0.4.14 python-multipart cryptography``
 - <a href="https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z">FFmpeg</a>
 - <a href="https://code.visualstudio.com/Download">(optional) VSCode</a>
+- <a href="https://mh-nexus.de/downloads/HxDPortableSetup.zip">(required for patching) HxD</a>
 
 ## requirements
 - at least Windows 10, Linux is untested as my server is a Windows machine. You should use Wine to run everything if you are using linux (or if running a Debian vps, you can use Proxmox and run a windows VM.)
