@@ -38,7 +38,7 @@ this guide will be mostly a mix of the original one, and some things i added.
 - open Command Prompt, and use CD to go into your PostgreSQL folder. it should be at ```C:\Program Files\PostgreSQL\(your postgres version, if you followed the guide it will be 13)\bin```
 - copy the schema.sql file in ```api/sql``` to that PostgreSQL bin folder, then run in a Command Prompt window in that folder:
 
-```psql --username=** --dbname=* < schema.sql```
+```psql --username=** --dbname=* < schema.sql``` replace --username with your PG user, db with your database name.
 
 - ```*``` = the name of the database you want to use, if this is your first time installing, use postgres
 - ```**``` = your postgres username, default is postgres if you didn't set any in the setup
@@ -48,7 +48,7 @@ this guide will be mostly a mix of the original one, and some things i added.
 - rename the ```appsettings.example.json``` file in ```Roblox/Roblox.Website``` to just ```appsettings.json```, then open it.
 - in the appsettings file, change the default POSTGRES line that looks like this:
 - ```"Postgres": "Host=127.0.0.1; Database=bubbabloxnew; Password=test; Username=postgres; Maximum Pool Size=20",```
-- in the ```appsettings.json``` make sure the GSIPAddress is either your internet ip (PLS NEVER HOST THIS ON UR PC), or ur vps ip
+- in the ```appsettings.json``` make sure the GSIPAddress is either your internet ip (PLS NEVER HOST THIS ON UR PC), you will have to use the IP with your vps's one.
 - change the sessions key: ```"Jwt": { "Sessions": "YourVerySecureSessionsKeyMakeThisReallyLong" },``` to ANYTHING make it REALLY long bc ppl can crack passwords but it would probably take years just pls change it to make it long
 
 to:
