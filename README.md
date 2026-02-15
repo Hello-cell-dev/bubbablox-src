@@ -1,13 +1,13 @@
 ## please do not contact me on trying to get the source setup. there are many guides on how to and if you read this guide properly you shouldn't need help.
-(this is the original fork before ownership got transferred to BlueDevyy, I will not be changing anything except adding more to this tutorial and adding tutorials for vulnerabilitys)
+(this is the original forked frim harryswag's before the repo ownership got transferred to BlueDevyy, I will not be changing anything except adding more to this tutorial and adding tutorials for vulnerabilitys)
 
 <div align="center">
     <p>
-      <h1>BubbaBlox</h1>
+      <h1>BubbaBlox | Rebranded</h1>
     </p>
 </div>
 
-this guide will be mostly a mix of the original one, and some things i added.
+its not recommended to setup bubbablox without a VPS, Domain, game server (opinonal). if you meet those requirement then yes you can run a revival
 
 (original guide by <a href="https://github.com/SrCookie450">SrCookie450</a>, changed and site fixed by <a href="https://github.com/harryzawg">harryzawg</a>)
 
@@ -17,23 +17,26 @@ this guide will be mostly a mix of the original one, and some things i added.
 - <a href="https://sbp.enterprisedb.com/getfile.jsp?fileid=1258627">PostgreSQL</a>, *for the database*
 - <a href="https://builds.dotnet.microsoft.com/dotnet/Sdk/6.0.412/dotnet-sdk-6.0.412-win-x64.exe">.NET 6.0</a>, *to run the website*
 - <a href="https://go.dev/dl/go1.20.6.windows-amd64.msi">Go</a>, *for asset validation*
-- <a href="https://www.python.org/ftp/python/3.12.8/python-3.12.8-amd64.exe">Python</a>, *for image validation, make sure to add to path in setup!*
+- <a href="https://www.python.org/ftp/python/3.12.8/python-3.12.8-amd64.exe">Python (3.12)</a>, *for image validation, make sure to add to path in setup!*
 - open cmd and paste this in once u finish installing python (REQUIRED) ``pip install fastapi aiohttp pydub uvicorn python-magic python-magic-bin==0.4.14 python-multipart cryptography``
-- <a href="https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z">FFmpeg</a>
-- <a href="https://code.visualstudio.com/Download">(optional) VSCode</a>
-- <a href="https://mh-nexus.de/downloads/HxDPortableSetup.zip">(required for patching) HxD</a>
+----------------------------
+- <a href="https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z">FFmpeg</a> {IF YOU WANT AUDIO'S TO WORK}
+- <a href="https://code.visualstudio.com/Download">(optional) VSCode</a> {RECOMMENDED}
+- <a href="https://mh-nexus.de/downloads/HxDPortableSetup.zip">(required for patching) HxD</a> {USED FOR PATCHING RCC}
 
 ## requirements
-- at least Windows 10, Linux is untested as my server is a Windows machine. You should use Wine to run everything if you are using linux (or if running a Debian vps, you can use Proxmox and run a windows VM.)
+- windows server. 2022-2025, all though linux wasn't actually tested but it is recommended to use VM if your using linux since they wont work properly due to EXE not being supported in linux lol.
+---
 - a 10 character long domain that supports both HTTP and HTTPS
-- knowledge on how things like this work (you should have at least some experience with websites and coding to be able to host this. it's really not hard to set up if you know what you're doing.)
+-- if you wanna make a moblie client. WWW. or ANY. is required for that.
+- you will need some knowledge of how things like this work (you should have at least some experience with websites and coding to be able to host this. it's really not hard to set up if you know what you're doing.)
 
-## vulnerabilitys
+## vulnerabilitys (RECOMMENDED)
 
 - go to ```your_revival_path/Roblox/Roblox.Website/Controllers/Internal/Other/AggHunt.cs``` and change the api key there, people can do https://your.domain/game/EggHunt.ashx?apiKey=TopSecretAggHuntKeyDoNOTLEAKPlz&placeId=1&playerId=REPLACE_WITH_USER_ID&eggId=REPLACE_WITH_ASSET_ID and give anything to any user, the place id doesnt matter.
 - go to ```your_revival_path/Roblox/Roblox.Configuration/Class1.cs``` and change the UserAgentBypassSecret, change it to anything random it doesnt matter 
 
-## database
+## database 
 
 - open Command Prompt, and use CD to go into your PostgreSQL folder. it should be at ```C:\Program Files\PostgreSQL\(your postgres version, if you followed the guide it will be 13)\bin```
 - copy the schema.sql file in ```api/sql``` to that PostgreSQL bin folder, then run in a Command Prompt window in that folder:
