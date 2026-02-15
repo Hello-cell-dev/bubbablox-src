@@ -1,5 +1,5 @@
 ## please do not contact me on trying to get the source setup. there are many guides on how to and if you read this guide properly you shouldn't need help.
-(this is the original forked from harryswag's before the repo ownership got transferred to BlueDevyy, I will not be changing anything except adding more to this tutorial and adding tutorials for vulnerabilitys)
+(this is the original forked from harryswag's before the repo ownership got transferred to BlueDevyy, I will not be changing anything except adding more to this tutorial and adding tutorials for vulnerabilitys and fixing bugs)
 
 <div align="center">
     <p>
