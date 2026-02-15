@@ -1,5 +1,5 @@
 ## please do not contact me on trying to get the source setup. there are many guides on how to and if you read this guide properly you shouldn't need help.
-(this is the original forked frim harryswag's before the repo ownership got transferred to BlueDevyy, I will not be changing anything except adding more to this tutorial and adding tutorials for vulnerabilitys)
+(this is the original forked from harryswag's before the repo ownership got transferred to BlueDevyy, I will not be changing anything except adding more to this tutorial and adding tutorials for vulnerabilitys)
 
 <div align="center">
     <p>
@@ -24,6 +24,9 @@ its not recommended to setup bubbablox without a VPS, Domain, game server (opino
 - <a href="https://code.visualstudio.com/Download">(optional) VSCode</a> {RECOMMENDED}
 - <a href="https://mh-nexus.de/downloads/HxDPortableSetup.zip">(required for patching) HxD</a> {USED FOR PATCHING RCC}
 
+## hosting clients on localhost
+- to host a client on localhost you have to go to ```C:\Windows\System32\drivers\etc``` and open hosts file in notepad++ or notepad all work, then you have to scroll to the very end be careful so u dont fuck up some stuff, make the domain 10 letters any domain works just make sure its not a regular domain u use it will probably fuck some shit up.
+  
 ## requirements
 - windows server. 2022-2025, all though linux wasn't actually tested but it is recommended to use VM if your using linux since they wont work properly due to EXE not being supported in linux lol.
 ---
