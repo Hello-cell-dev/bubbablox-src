@@ -9,7 +9,7 @@
 
 its not recommended to setup bubbablox without a VPS, Domain, game server (opinonal). if you meet those requirement then yes you can run a revival
 
-(original guide by <a href="https://github.com/SrCookie450">SrCookie450</a>, changed and site fixed by <a href="https://github.com/harryzawg">harryzawg</a>)
+(original guide by <a href="https://github.com/SrCookie450">SrCookie450</a>, changed and site fixed by <a href="https://github.com/harryzawg">harryzawg</a>, tutorial edited by <a href="https://github.com/unknownluau">unknownluau</a> and <a href="https://github.com/potatoluau">potatoluau</a>)
 
 ## things you need
 
