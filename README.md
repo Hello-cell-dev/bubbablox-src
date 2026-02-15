@@ -24,6 +24,20 @@ its not recommended to setup bubbablox without a VPS, Domain, game server (opino
 - <a href="https://code.visualstudio.com/Download">(optional) VSCode</a> {RECOMMENDED}
 - <a href="https://mh-nexus.de/downloads/HxDPortableSetup.zip">(required for patching) HxD</a> {USED FOR PATCHING RCC}
 
+## hosting suggestions
+- we suggest datalix for vps and spaceship for domain
+
+## cloudflare setup
+- ofc first add ur domain in there
+- then go to quick search and type tunnels
+- go to Networks > Connectors then create a new tunnel
+- select cloudflared then name it anything it doesnt matter
+- follow the tutorial in there it has the tutorial on how to connect a tunnel
+---
+- go to DNS > Records then delete everything but keep the NS records
+- then add a record with Type ``A`` Name ``games`` Content ``your.vps.ip`` Proxy status ``off`` TTL ``Auto``
+- after that add a record with Type ``CNAME`` Name ``www`` Content ``your.domain`` Proxy status ``on`` TTL ``Auto``
+
 ## hosting clients on localhost
 - to host a client on localhost you have to go to ```C:\Windows\System32\drivers\etc``` and open hosts file in notepad++ or notepad all work, then you have to scroll to the very end be careful so u dont fuck up some stuff, make the domain 10 letters any domain works just make sure its not a regular domain u use it will probably fuck some shit up.
   
