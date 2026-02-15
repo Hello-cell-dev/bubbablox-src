@@ -1,5 +1,4 @@
-## please do not contact me on trying to get the source setup. there are many guides on how to and if you read this guide properly you shouldn't need help.
-(this is the original forked from harryswag's before the repo ownership got transferred to BlueDevyy, I will not be changing anything except adding more to this tutorial and adding tutorials for vulnerabilitys and fixing bugs)
+## do not disturb us with helps. or helping you make client and website. were not gonna help you since it disturbs us alot during break/work thank you
 
 <div align="center">
     <p>
