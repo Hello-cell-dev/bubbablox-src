@@ -1,4 +1,6 @@
 ## please do not contact me on trying to get the source setup. there are many guides on how to and if you read this guide properly you shouldn't need help.
+(this is the original fork before ownership got transferred to BlueDevyy, I will not be changing anything except adding more to this tutorial and adding tutorials for vulnerabilitys)
+
 <div align="center">
     <p>
       <h1>BubbaBlox</h1>
@@ -26,6 +28,11 @@ this guide will be mostly a mix of the original one, and some things i added.
 - a 10 character long domain that supports both HTTP and HTTPS
 - knowledge on how things like this work (you should have at least some experience with websites and coding to be able to host this. it's really not hard to set up if you know what you're doing.)
 
+## vulnerabilitys
+
+- go to ```your_revival_path/Roblox/Roblox.Website/Controllers/Internal/Other/AggHunt.cs``` and change the api key there, people can do https://your.domain/game/EggHunt.ashx?apiKey=TopSecretAggHuntKeyDoNOTLEAKPlz&placeId=1&playerId=REPLACE_WITH_USER_ID&eggId=REPLACE_WITH_ASSET_ID and give anything to any user, the place id doesnt matter.
+- go to ```your_revival_path/Roblox/Roblox.Configuration/Class1.cs``` and change the UserAgentBypassSecret, change it to anything random it doesnt matter 
+
 ## database
 
 - open Command Prompt, and use CD to go into your PostgreSQL folder. it should be at ```C:\Program Files\PostgreSQL\(your postgres version, if you followed the guide it will be 13)\bin```
@@ -41,6 +48,8 @@ this guide will be mostly a mix of the original one, and some things i added.
 - rename the ```appsettings.example.json``` file in ```Roblox/Roblox.Website``` to just ```appsettings.json```, then open it.
 - in the appsettings file, change the default POSTGRES line that looks like this:
 - ```"Postgres": "Host=127.0.0.1; Database=bubbabloxnew; Password=test; Username=postgres; Maximum Pool Size=20",```
+- in the ```appsettings.json``` make sure the GSIPAddress is either your internet ip (PLS NEVER HOST THIS ON UR PC), or ur vps ip
+- change the sessions key: ```"Jwt": { "Sessions": "YourVerySecureSessionsKeyMakeThisReallyLong" },``` to ANYTHING make it REALLY long bc ppl can crack passwords but it would probably take years just pls change it to make it long
 
 to:
 
