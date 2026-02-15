@@ -43,6 +43,7 @@ keep in mind if you see "bad gateway" once finishing. it means cloudflare is get
 ---------
 ## hosting clients on localhost
 - to host a client on localhost you have to go to ```C:\Windows\System32\drivers\etc``` and open hosts file in notepad++ or notepad all work, then you have to scroll to the very end be careful so u dont fuck up some stuff, make the domain 10 letters any domain works just make sure its not a regular domain u use it will probably fuck some shit up.
+- Example: ``127.0.0.1 revival.io``
 
 potatoluau : who hosts client on localhost son get a domain
 
