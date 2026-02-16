@@ -34,6 +34,8 @@ its not recommended to setup bubbablox without a VPS, Domain, game server (opino
 - 3 go to Networks > Connectors then create a new tunnel
 - 4 select cloudflared then name it anything it doesnt matter
 - 5 follow the tutorial in there it has the tutorial on how to connect a tunnel
+- 6 go to the tunnel u just made then go to published application routes
+- 7 then press add a published application route after that in domain select your domain dont add anything in subdomain, leave path empty, and in service make it http and url localhost press save
 ---
 - go to DNS > Records then delete everything but keep the NS records
 - then add a record with Type ``A`` Name ``games`` Content ``your.vps.ip`` Proxy status ``off`` TTL ``Auto``
