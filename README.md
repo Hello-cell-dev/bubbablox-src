@@ -2,7 +2,7 @@
 
 <div align="center">
     <p>
-      <h1>BubbaBlox | Rebranded</h1>
+      <h1>BubbaBlox | fixed fr</h1>
     </p>
 </div>
 
