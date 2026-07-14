@@ -31,7 +31,7 @@ const useStyles = createUseStyles({
 		color: '#000000',
         "&:hover": {
             color: "#007bff !important",
-            backgroundColor: "transparent !important",
+            backgroundColor: "#ffffff !important",
         },
         "&.active": {
             color: "#007bff",
